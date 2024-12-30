@@ -10,7 +10,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "my-developer-stack",
     title: "My Developer Stack",
-    date: "2024-10-15",
+    date: "2024-12-30",
     content: "/content/blogs/my-developer-stack.md",
   },
   // {

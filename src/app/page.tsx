@@ -23,7 +23,7 @@ export default function HomePage() {
           </Link>
           . I previously worked as a software engineer at Verily Life Sciences
           and Google. Most of my career has been spent as a backend developer,
-          but ever since starting a startup I have dabled more in the front end.
+          but ever since starting a startup I have dabled more in the frontend.
           I&apos;m a father of two kids who enjoys programming, running, and
           reading books. Most of my writing on here will be about one of those
           things.

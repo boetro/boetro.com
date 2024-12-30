@@ -1,48 +1,21 @@
 ## TL;DR
 
+- [Zed](https://zed.dev) for my IDE
+- [v0](https://v0.dev) for prototyping
 - Next.js + Tailwind for frontend
-- FastAPI or Axum for backend
+- FastAPI (Python) or Axum (Rust) for backend
 - Postgres for database
-- GCP or Vercel for hosting
 
 Over the past year or two my preferred developer stack has changed a ton.
 Part of that is because of the advent of AI and all the new AI developer tools that are out there. But also moving
 from working at a large company to a startup has allowed me the freedom to experiment and use what I like more as opposed to what is required.
 
-
-
-## Frontend
-
-For my frontend I usually reach for Next.js with Tailwind. This usually for two reasons.
-
-1. It's what I know best so I know I can get a project up and running quickly.
-2. It works really well with v0.dev.
-
-I do really like using Svelte + SvelteKit and will often use that if I'm the only one working on the project.
-But if I'm working with a team I'll almost always pick Next.js since the community around Next.js and React is so good.
-
-## Backend
-
-I usually write any backend code in Python with FastAPI.
-I like FastAPI because it's really intuitive to write and it is incredibly easy to get something up and running.
-It plugs in with the rest of the python ecosystem and makes using things like SQLAlchemy really easy.
-
-Depending on the project I will also occasionally use Rust + Axum. It is definitely more verbose than FastAPI,
-but just knowing that I'm writing something that is fast and most importantly
-comes with all the safety guarantees that rust provides is really nice.
-
-I use Postgres for my database. Sometimes I'll start out with sqlite, but I found I'll eventually want
-/ need to switch to Postgres eventually so starting with it out of the box helps things go smoother. When
-developing locally I typically use docker with docker compose to spin up a Postgres instance that my locally
-running stack can talk to. This allows me to deploy my stack to a cloud provider without having to change
-any code at all. Just update some environment variables and I'm good to go.
-
 ## Developer Tools
 
 My developer tools have changed a lot over the past year. I used to use VSCode with a bunch of plugins, but I've recently switched to using
-[Zed](https://zed.dev/) as my daily driver. The main driver for switching was I felt like VSCode was getting too bloated and slow.
-I picked up Zed and could immediately tell that everything felt snappier and more responsive. Running `zed .` to open a project is
-remarkably fast compared to VSCode. The two other big features I really like with zed are:
+[Zed](https://zed.dev/) as my daily driver. The main reason for switching was I felt like VSCode was getting too bloated and slow.
+I picked up Zed and could immediately everything felt snappier and more responsive. Running `zed .` to open a project is
+remarkably fast compared to VSCode. The two other big features I really like with Zed are:
 
 1. Vim mode that is actually useful
 2. AI integration works really smoothly
@@ -59,14 +32,27 @@ but definitely consider myself a backend developer first. V0 makes it so easy to
 a working prototype I can easily pull it down and make any minor changes I need. This works great for me cause I struggle more with
 the style aspect of frontend development than the actual logic.
 
+## Frontend
 
-## Infrastructure
+**Next.js + Tailwind** is my go to frontend stack. This is for two reasons:
 
-When it comes to hosting my applications I almost always reach for GCP. I've worked on a lot of devops products over the
-last year so I consider myself well versed in all of the major clouds but GCP continues to be my favorite. Getting
-started on GCP is just so simple and the features you get with all the products are really nice. I've used AWS an equal
-amount and you can more control with AWS but the setup cost is just so much higher.
+1. It's what I know best so I know I can get a project up and running quickly.
+2. It works really well with [v0.dev](https://v0.dev.
 
-On GCP, Cloud Run is my favorite service they offer. It's so easy to get a containerized application up and running, and
-for an extremely cheap price. For deploying frontend applications I'll reach for Vercel, the preview deployments and
-GitHub integration make it really nice. But if there's any concerns about cost or scaling I'll usually just deploy to GCP.
+I do really like using Svelte + SvelteKit and will often use that if I'm the only one working on the project.
+But if I'm working with a team I'll almost always pick Next.js since the community and tooling around Next.js and React is so superb.
+
+## Backend
+
+**Python + FastAPI** or **Rust + Axum** is my go to backend stack.
+I like FastAPI because it's really intuitive to write and it is incredibly easy to get something up and running.
+It plugs in with the rest of the python ecosystem and makes using things like SQLAlchemy really easy.
+
+Depending on the project I will also occasionally use Rust + Axum. It is definitely more verbose than FastAPI,
+but just knowing that I'm writing something that is fast and most importantly
+comes with all the safety guarantees that rust provides is really nice.
+
+**Postgres** is my default database.  When developing locally I typically use docker with
+docker compose to spin up a Postgres instance that my locally
+running stack can talk to. This allows me to deploy my stack to a cloud provider without having to change
+any code at all. Just update some environment variables and I'm good to go.

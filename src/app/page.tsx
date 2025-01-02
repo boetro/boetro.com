@@ -4,7 +4,10 @@ import { projects } from "@/data/projects";
 import { Github } from "lucide-react";
 
 export default function HomePage() {
-  const recentBlogPosts = blogPosts.slice(0, 5);
+  const sortedBlogPosts = blogPosts.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  );
+  const recentBlogPosts = sortedBlogPosts.slice(0, 5);
   const recentProjects = projects.slice(0, 5);
 
   return (

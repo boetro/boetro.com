@@ -3,7 +3,6 @@ export interface BlogPost {
   title: string;
   date: string;
   projectSlug?: string;
-  content: string; // This will store the path to the markdown file
 }
 
 export const blogPosts: BlogPost[] = [
@@ -11,8 +10,12 @@ export const blogPosts: BlogPost[] = [
     slug: "my-developer-stack",
     title: "My Developer Stack",
     date: "2024-12-30",
-    content: "/content/blogs/my-developer-stack.md",
   },
+  // {
+  //   slug: "smart-cal-design",
+  //   title: "Design: Smart Calendar",
+  //   date: "2025-01-02",
+  // },
   // {
   //   slug: "prototype-frontend",
   //   title: "Prototype Frontend",

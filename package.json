@@ -9,7 +9,10 @@
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
-    "deploy": "npm run pages:build && wrangler pages deploy"
+    "deploy": "npm run pages:build && wrangler pages deploy",
+    "docker:build": "docker build -t boetro-app .",
+    "docker:run": "docker run -p 3000:3000 boetro-app",
+    "docker:dev": "docker-compose up --build"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",

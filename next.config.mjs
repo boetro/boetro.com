@@ -9,6 +9,7 @@ if (process.env.NODE_ENV === "development") {
 const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   reactStrictMode: true,
+  output: 'standalone',
   /* config options here */
 };
 

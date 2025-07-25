@@ -4,14 +4,8 @@ import { projects } from "@/data/projects";
 import { blogPosts } from "@/data/blogs";
 import { Github } from "lucide-react";
 
-interface ProjectPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default function ProjectPage({ slug }: { slug: string }) {
+  const project = projects.find((p) => p.slug === slug);
   if (!project) notFound();
 
   const relatedPosts = blogPosts

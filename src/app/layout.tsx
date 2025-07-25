@@ -7,7 +7,7 @@ import { inter } from "@/styles/fonts";
 
 export const metadata = {
   title: "Caleb Van Dyke",
-  description: "Frontend Developer, Writer, and Community Builder",
+  description: "Programmer, Runner, Reader",
 };
 
 export default function RootLayout({

@@ -11,11 +11,12 @@ export const blogPosts: BlogPost[] = [
     title: "My Developer Stack",
     date: "2024-12-30",
   },
-  // {
-  //   slug: "smart-cal-design",
-  //   title: "Design: Smart Calendar",
-  //   date: "2025-01-02",
-  // },
+  {
+    slug: "smart-cal-design",
+    title: "Design: Smart Calendar",
+    date: "2025-01-02",
+    projectSlug: "smart-calendar",
+  },
   // {
   //   slug: "prototype-frontend",
   //   title: "Prototype Frontend",

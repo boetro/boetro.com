@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: boetro-blog
-          image: ghcr.io/boetro/boetro.com:main-72ab63c8f68398962214c0191bbcaeaefe0c0357
+          image: ghcr.io/boetro/boetro.com:main-72ab63c
           ports:
             - containerPort: 3000
           env:

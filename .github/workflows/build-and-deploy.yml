@@ -48,7 +48,7 @@ jobs:
       - name: Update Kubernetes deployment
         run: |
           # Update the image tag in deployment.yaml with the commit SHA
-          sed -i "s|image: ghcr.io/boetro/boetro.com:.*|image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main-${{ github.sha }}|g" k8s/deployment.yaml
+          sed -i "s|image: ghcr.io/boetro/boetro.com:.*|image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main-${GITHUB_SHA:0:7}|g" k8s/deployment.yaml
 
           # Commit and push the updated deployment file
           git config --local user.email "action@github.com"
